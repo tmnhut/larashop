@@ -3,9 +3,20 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app/Http/Controllers/Front.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/app.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fonts" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/images" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/fonts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/images" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/blog.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/blog_post.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/cart.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/checkout.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/contact_us.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/home.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/login.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/page.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/product_details.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/products.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/welcome.blade.php" charset="UTF-8" />
   </component>
 </project>
