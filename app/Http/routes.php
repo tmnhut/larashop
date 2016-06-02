@@ -24,6 +24,26 @@ Route::get('/cart', 'Front@cart');
 Route::get('/checkout', 'Front@checkout');
 Route::get('/search/{query}', 'Front@search');
 
+// Authentication routes...
+Route::get('auth/login', 'Front@login');
+Route::post('auth/login', 'Front@authenticate');
+Route::get('auth/logout', 'Front@logout');
+
+// Registration routes...
+Route::post('/register', 'Front@register');
+
+// Cart routes...
+Route::get('/cart', 'Front@cart');
+Route::post('/cart', 'Front@cart');
+Route::post('/cart-remove-item', 'Front@cart_remove_item');
+Route::get('/clear-cart', 'Front@clear_cart');
+Route::get('/checkout', [
+    'middleware' => 'auth',
+    'uses' => 'Front@checkout'
+]);
+Route::get('/search/{query}', 'Front@search');
+
+// API routes...
 Route::get('/insert', function() {
     App\Category::create(array('name' => 'Music'));
 
@@ -80,7 +100,6 @@ Route::get('blade', function () {
     return view('page', array('name' => 'The Raven', 'day' => 'Friday', 'drinks' => $drinks));
 });
 
-Route::post('/cart', 'Front@cart');
 
 
 

@@ -1591,6 +1591,12 @@ h2.title {
   vertical-align: inherit;
 }
 
+#cart_items .cart_info .no-item {
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
 
 #cart_items .cart_info .image {
   padding-left: 30px;
