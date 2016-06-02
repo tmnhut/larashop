@@ -3,7 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app/Console/Commands/Scrape.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Controllers/Front.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/simple_html_dom.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/ScrapeModel/simple_html_dom.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/app.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/public/css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/public/fonts" charset="UTF-8" />

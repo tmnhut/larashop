@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Stores;
+use App\ScrapeModel\Stores;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
 
@@ -39,7 +39,7 @@ class Scrape extends Command
      */
     public function handle()
     {
-        $dom_parse_path = app_path('simple_html_dom.php');
+        $dom_parse_path = app_path('ScrapeModel/simple_html_dom.php');
         include($dom_parse_path);
         $stores = Stores::getStore();
         if (count($stores) > 0) {
