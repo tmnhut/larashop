@@ -88,16 +88,22 @@ class Front extends Controller {
             Cart::update($rowId[0], $item->qty - 1);
         }
 
+        //remove a item
+        if (Request::get('product_id') && (Request::get('remove')) == 1) {
+            $rowId = Cart::search(array('id' => Request::get('product_id')));
+            if(!empty($rowId[0]))
+                Cart::remove($rowId[0]);
+            else
+                return Redirect::away('cart');
+        }
+
         $cart = Cart::content();
 
         return view('cart', array('cart' => $cart, 'title' => 'Welcome', 'description' => '', 'page' => 'home'));
     }
 
     public function cart_remove_item(){
-        $rowId = Cart::search(array('id' => Request::get('product_id')));
-        Cart::remove($rowId[0]);
-        $cart = Cart::content();
-        return view('cart', array('cart' => $cart, 'title' => 'Welcome', 'description' => '', 'page' => 'home'));
+
     }
 
     public function clear_cart() {
