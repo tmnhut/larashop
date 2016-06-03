@@ -3,7 +3,39 @@
 namespace App;
 
 class Post extends BaseModel {
-    protected $primaryKey = 'id';
-    protected $table = 'posts';
-    protected $fillable = array('url', 'title', 'description','content','blog','created_at_ip', 'updated_at_ip');
+    protected $fillable = array('url', 'title', 'description', 'content', 'image', 'blog', 'category_id');
+
+    public static function prevBlogPostUrl($id) {
+        $blog = \DB::table('posts')
+            ->orderBy('id', 'desc')
+            ->skip(0)
+            ->take(1)
+            ->where('id', '<', $id)
+            ->get();
+
+        $url = '#';
+
+        if (count($blog) > 0) {
+            $url = $blog[0]->url;
+        }
+
+        return $url;
+    }
+
+    public static function nextBlogPostUrl($id) {
+        $blog = \DB::table('posts')
+            ->orderBy('id', 'asc')
+            ->skip(0)
+            ->take(1)
+            ->where('id', '>', $id)
+            ->get();
+
+        $url = '#';
+
+        if (count($blog) > 0) {
+            $url = $blog[0]->url;
+        }
+
+        return $url;
+    }
 }
