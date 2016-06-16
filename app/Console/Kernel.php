@@ -14,7 +14,9 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         // Commands\Inspire::class,
-        Commands\Scrape::class
+        Commands\Scrape::class,
+        Commands\TelePromotion::class,
+        Commands\RealEstate::class,
     ];
 
     /**
@@ -27,5 +29,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+//        $schedule->command('tele:all')->dailyAt('17:00');
+        $schedule->command('real:all')->daily();
     }
 }

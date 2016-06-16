@@ -47,4 +47,25 @@ class Stores
         ];
         return $stores;
     }
+
+    public static function getPromotionLinks()
+    {
+        $links = [
+            'mobi' => 'http://mobifone.vn/wps/portal/public/khuyen-mai/tin-khuyen-mai',
+            'viettel' => 'http://dichvudidong.vn/tin-khuyen-mai-viettel',
+            'vina' => 'http://dichvudidong.vn/tin-khuyen-mai-vinaphone',
+            'vietnam_mobi' => 'http://dichvudidong.vn/khuyen-mai-vietnamobile',
+        ];
+        return $links;
+    }
+
+    public static function getRealEstateLinks()
+    {
+        $links = [
+            'chotot' => 'https://www.chotot.com/tp-ho-chi-minh/thue-nha-dat?mre=3&ros=&roe=&ss=&se=#',
+            'muaban' => 'https://muaban.net/nha-hem-ngo-ho-chi-minh-l59-c3407?min=2000&max=3500&cr=1000',
+            'batdongsan' => 'http://batdongsan.com.vn/cho-thue-nha-rieng-tp-hcm/-1/n-4/-1/-1'
+        ];
+        return $links;
+    }
 }
