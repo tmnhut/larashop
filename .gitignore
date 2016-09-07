@@ -5,8 +5,8 @@ Homestead.yaml
 Homestead.json
 .env
 # phpstorm project files
-.idea
-.idea/workspace.xml
+/.idea
+
 # netbeans project files
 nbproject
 
